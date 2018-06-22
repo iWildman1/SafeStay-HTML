@@ -1,0 +1,19 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    background-color: $bg-light;
+    overflow-x: hidden;
+}
+
+.bg-burgundy {
+    background-color: $accent-burgundy;
+}
