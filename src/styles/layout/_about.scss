@@ -2,6 +2,11 @@
     padding-top: 14rem;
     background-color: white;
     padding-bottom: 10rem;
+    
+    &.pad-less {
+        padding-top: 7rem;
+        padding-bottom: 14rem;
+    }
 
     p {
         font-family: $proxima-nova-alt;

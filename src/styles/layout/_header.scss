@@ -6,6 +6,21 @@ header {
     background-position: center center;
     position: relative;
 
+    &.header-uk {
+        background-image: url('/img/uk_header.png')
+    }
+
+    &.header-madrid {
+        background-image: url('/img/madrid_header.png');
+    }
+
+    &.location-header {
+        h1 {
+            padding-bottom: 20px;
+            font-size: 12rem;
+        }
+    }
+
     .header-info {
 
         position: absolute;

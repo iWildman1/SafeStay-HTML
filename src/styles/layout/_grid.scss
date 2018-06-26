@@ -14,6 +14,10 @@
 .row {
     display: flex;
 
+    &.extend-right {
+        margin-right: calc((-100vw + 1256px) / 2);
+    }
+
     .grid-225 {
         flex: 0 0 calc(22.5% - 2rem);
         margin-left: 1rem;
@@ -34,6 +38,12 @@
 
     .grid-30 {
         flex: 0 0 calc(30% - 2rem);
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .grid-70 {
+        flex: 0 0 calc(70% - 2rem);
         margin-left: 1rem;
         margin-right: 1rem;
     }

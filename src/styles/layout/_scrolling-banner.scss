@@ -16,5 +16,10 @@
             color: $accent-yellow;
             opacity: 1;
         }
+
+        &.active-uk {
+            color: $accent-blue;
+            opacity: 1;
+        }
     }
 }
