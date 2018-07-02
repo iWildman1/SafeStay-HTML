@@ -13,6 +13,7 @@
 @import 'components/_button';
 @import 'components/_image-composition';
 @import 'components/_booking-form';
+@import 'components/_address-comp';
 
 //Layout
 @import 'layout/_grid.scss';
@@ -28,7 +29,13 @@
 @import 'layout/_city-details';
 @import 'layout/_explorer';
 @import 'layout/_inspiration';
+@import 'layout/things-to-do';
+@import 'layout/_room-overlay';
+@import 'layout/_quick-links';
+@import 'layout/_contact-form';
 
 //Pages
 @import 'pages/_home';
+@import 'pages/_explorer-single';
+@import 'pages/_contact';
 

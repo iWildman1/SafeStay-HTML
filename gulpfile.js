@@ -9,7 +9,8 @@ let gulp         = require('gulp'),
     buffer       = require('vinyl-buffer'),
     watchify     = require('watchify'),
     rename       = require('gulp-rename'),
-    source       = require('vinyl-source-stream');
+    source       = require('vinyl-source-stream'),
+    wait         = require('gulp-wait');
 
 let bundleConfig = {
     js: {
@@ -57,6 +58,7 @@ gulp.task('css', function() {
     ];
 
     return gulp.src('./src/styles/app.scss')
+        .pipe(wait(300))
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
         .pipe(gulp.dest('./src/styles'))

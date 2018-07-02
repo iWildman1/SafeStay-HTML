@@ -61,6 +61,20 @@
         padding-bottom: 4rem;
         border-bottom: 2px solid $accent-yellow;
 
+        &.details-map {
+            margin-top: -2rem;
+            background-image: url('/img/madrid-map.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 90rem;
+
+            h1 {
+                color: $text-dark;
+                margin-top: 0;
+                
+            }
+        }
+
         .facility-list {
             position: relative;
             padding-top: 0;

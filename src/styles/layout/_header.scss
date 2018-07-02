@@ -6,6 +6,10 @@ header {
     background-position: center center;
     position: relative;
 
+    &.header-explorer {
+        height: 60rem;
+    }
+
     &.header-uk {
         background-image: url('/img/uk_header.png')
     }

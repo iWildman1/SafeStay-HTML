@@ -25,3 +25,30 @@ body {
 .bg-light-grey {
     background-color: $bg-light !important;
 }
+
+.bg-white {
+    background-color: white;
+}
+
+.standard-two-row {
+
+    display: flex;
+    align-items: center;
+    
+    h1 {
+        color: $text-dark;
+        font-size: 6.5rem;
+        margin-top: 0;
+    }
+
+    p {
+        margin-top: 0.6rem;
+        font-family: $proxima-nova-alt;
+        font-weight: 400;
+        padding-right: 8rem;
+        font-size: 1.5rem;
+        color: $text-dark;
+        line-height: 2.4rem;
+    }
+
+}

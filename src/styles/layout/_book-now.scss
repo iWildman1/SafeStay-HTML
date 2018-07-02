@@ -2,6 +2,10 @@
     background-color: white;
     padding-top: 7rem;
 
+    &.book-explorer {
+        padding-top: 0;
+    }
+
     .booking-grid {
         padding: 3rem 10rem;
 
@@ -12,6 +16,27 @@
             font-weight: 500;
             font-size: 6.5rem;
         }  
+    }
+
+    .booking-form-explorer {
+        width: 100%;
+        box-shadow: initial;
+
+        #booking-country {
+            font-size: 3rem;
+        }
+
+        select {
+            padding: 1.5rem !important;
+        }
+
+        #location,
+        #checkin,
+        #checkout,
+        #people {
+            font-size: 1.7rem;
+            padding: 1.5rem;
+        }
     }
 
     .booking-slider {
