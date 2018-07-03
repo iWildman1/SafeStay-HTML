@@ -14,6 +14,7 @@
 @import 'components/_image-composition';
 @import 'components/_booking-form';
 @import 'components/_address-comp';
+@import 'components/_featured-hostel';
 
 //Layout
 @import 'layout/_grid.scss';
@@ -38,4 +39,6 @@
 @import 'pages/_home';
 @import 'pages/_explorer-single';
 @import 'pages/_contact';
+@import 'pages/_group-bookings';
+@import 'pages/_exclusive-offers';
 

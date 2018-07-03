@@ -10,6 +10,16 @@
         right: -25%;
         bottom: -12%;
     }
+
+    &.comp-right {
+        float: right;
+    }
+
+    &.comp-reverse {
+        .comp-under {
+            left: -25%;
+        }
+    }
 }
 
 .image-composition-2 {

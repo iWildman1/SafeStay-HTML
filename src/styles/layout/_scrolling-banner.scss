@@ -3,6 +3,14 @@
     white-space: nowrap;
     text-align: center;
 
+    &.sb-white {
+        background-color: white;
+    }
+
+    &.padded-large {
+        padding-top: 8rem;
+    }
+
 
 
     .banner-item {
@@ -11,6 +19,7 @@
         color: black;
         opacity: 0.1;
         padding-left: 3rem;
+        cursor: pointer;
 
         &.active {
             color: $accent-yellow;
