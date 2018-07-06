@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=11">
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
         <link rel="stylesheet" href="/styles/app.css">
     </head>
     <body>
@@ -13,17 +14,17 @@
                 <div class="container">
                     <div class="nav-inner">
                         <div class="logo">
-                            <a href="#">
+                            <a href="/">
                                 <img src="/img/logo.png" alt="">
                             </a>
                         </div>
-                        <div class="link">
+                        <div class="link locations-open-toggle">
                             <img src="/img/map_marker_icon.png" alt="">
                             <a href="#">Locations</a>
                         </div>
                         <div class="link">
                             <img src="/img/groups_icon.png" alt="">
-                            <a href="#">Groups</a>
+                            <a href="/group-bookings.html">Groups</a>
                         </div>
                     </div>
                 </div>
@@ -46,7 +47,7 @@
                 <div class="container">
                     <h1>Chic City Hostels</h1>
                     <h2>Across The Globe</h2>
-                    <a href="#" class="button">See All Locations</a>
+                    <a href="#" class="button locations-open-toggle">See All Locations</a>
                     
                     
                     <div class="slider-toggles">
@@ -74,7 +75,7 @@
                         <div class="booking-toggle toggle-active">
                             <img src="/img/person-icon.png" alt=""> Individual
                         </div>
-                        <div class="booking-toggle">
+                        <div class="booking-toggle relocate-group-booking">
                             <img src="/img/group-icon-grey.png" alt="">Group Booking
                         </div>
                     </div>
@@ -135,22 +136,31 @@
                         </div>
                     </div>
                 </div>
-                <div class="row" style="height: 34rem">
-                    <div class="grid-item half bg-spain-image flex centralize" style="background-image: url('/img/600x329_Barcelona_Sea.png')">
-                        <h3>Barcelona Sea</h3>
-                    </div>
-                    <div class="grid-item grid-225 bg-spain-image flex centralize" style="background-image: url('/img/269x329_Madrid.png')">
-                        <h3>Madrid</h3>
-                    </div>
-                    <div class="grid-item grid-275 bg-spain-image flex centralize no-margin-right" style="background-image: url('/img/349x329_Barcelona_Gothic.png')">
-                        <h3>Barcelona Gothic</h3>
+                <div class="slider-wrapper">
+                    <div class="row explore-slider" style="height: 34rem">
+                        <div class="grid-item half bg-spain-image flex centralize" style="background-image: url('/img/600x329_Barcelona_Sea.png')">
+                            <h3>Barcelona Sea</h3>
+                        </div>
+                        <div class="grid-item grid-225 bg-spain-image flex centralize" style="background-image: url('/img/269x329_Madrid.png')">
+                            <h3>Madrid</h3>
+                        </div>
+                        <div class="grid-item grid-275 bg-spain-image flex centralize no-margin-right" style="background-image: url('/img/349x329_Barcelona_Gothic.png')">
+                            <h3>Barcelona Gothic</h3>
+                        </div>
+                        <div class="grid-item half bg-spain-image flex centralize" style="background-image: url('/img/600x329_Barcelona_Sea.png')">
+                            <h3>Barcelona Sea</h3>
+                        </div>
+                        <div class="grid-item grid-225 bg-spain-image flex centralize" style="background-image: url('/img/269x329_Madrid.png')">
+                            <h3>Madrid</h3>
+                        </div>
+                        <div class="grid-item grid-275 bg-spain-image flex centralize no-margin-right" style="background-image: url('/img/349x329_Barcelona_Gothic.png')">
+                            <h3>Barcelona Gothic</h3>
+                        </div>
                     </div>
                 </div>
+                
                 <div class="slider-controls">
-                    <div class="control"></div>
-                    <div class="control control-active"></div>
-                    <div class="control"></div>
-                    <div class="control"></div>
+
                 </div>
                 <div class="drag-info">
                     <div class="drag-img">
@@ -181,7 +191,7 @@
                             <p class="text-main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. aliqua. Ut enim
                             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <a href="#" class="button">Book Now</a>
+                            <a href="/group-bookings.html" class="button">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -196,7 +206,7 @@
                                 and explore the vibrant city centres around you. Check out our locations below and get planning! When you enter you'll find
                                 a friendly local team who can guide you throughout your stay, always delivering our unique and award-winning standard of
                                 quality, cleanliness and customer service</p>
-                                <a href="#" class="button">Book Now</a>
+                                <a href="#book-now" class="button">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -207,7 +217,7 @@
             </div>
         </section>
 
-        <section class="book-now">
+        <section class="book-now" id="book-now">
             <div class="container container-fluid">
                 <div class="row">
                     <div class="grid-item half bg-burgundy no-margin-left booking-grid">
@@ -265,6 +275,7 @@
                                     <img src="/img/360x360_Spain2.png" alt="">
                                 </div>
                             </div>
+                            </form>
                         </div>
                         <div class="booking-slider-controls">
                             <span>
@@ -443,6 +454,644 @@
                 </div>
             </div>
         </footer>
+
+
+
+
+        <div class="locations-overlay-1">
+            <div class="container">
+                <div class="icon-row">
+                    <img src="/img/SafeStay_logo_stack_Nobox_whiteout cmyk.png" alt="">
+                    <img class="locations-close-toggle" src="/img/Group 30.png" alt="">
+                </div>
+                <h1>Our locations</h1>
+        
+                <section class="booking-form">
+                    <div class="booking-inner">
+                        <div class="booking-toggles">
+                            <div class="booking-toggle toggle-active">
+                                <img src="/img/person-icon.png" alt=""> Individual
+                            </div>
+                            <div class="booking-toggle">
+                                <img src="/img/group-icon-grey.png" alt="">Group Booking
+                            </div>
+                        </div>
+        
+                        <div class="booking-headings">
+                            <p class="label">Book Now</p>
+                            <h4>Stay with SafeStay</h4>
+                        </div>
+                        <form class="booking-inputs">
+                            <div class="form-group location-group">
+                                <select name="location" id="location">
+                                    <option value="">Where would you like to go?</option>
+                                </select>
+                                <img class="form-icon" src="/img/world_icon.png" alt="">
+                                <img class="select-down" src="/img/select-down.png" alt="">
+                            </div>
+                            <div class="form-group checkin-group">
+                                <input type="text" name="check-in" id="check-in" placeholder="Check In">
+                                <img class="check-icon" src="/img/check-icon.png" alt="">
+                            </div>
+                            <div class="form-group checkout-group">
+                                <input type="text" name="check-out" id="check-out" placeholder="Check Out">
+                                <img class="check-icon" src="/img/check-icon.png" alt="">
+                            </div>
+                            <div class="form-group book-group">
+                                <button type="submit">Book Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+        
+                <div class="locations-list">
+        
+                    <div class="locations-grid">
+                        <div class="location-row">
+                            <div class="location-title-block uk">
+                                <div class="location-title-inner">
+                                    <h2>United Kingdom</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                        labore et dolore magna.</p>
+                                </div>
+                            </div>
+                            <div class="hostel">
+                                <div class="img-container">
+                                    <img src="/img/023X5034 Copy 12.png" alt="">
+                                </div>
+                                <div class="info-container">
+                                    <div class="info-wrap">
+                                        <p class="location">United Kingdom</p>
+                                        <div class="name-row">
+                                            <img src="/img/Barcelona Sea Copy 13.png" alt="">
+                                            <p>York
+                                                <br> &nbsp;
+                                            </p>
+                                        </div>
+                                        <div class="reviews-row">
+                                            <p>Reviews</p>
+                                            <div class="stars">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <p class="class">Excellent</p>
+                                            </div>
+                                        </div>
+                                        <a href="" class="button book-now-featured">Book Now</a>
+                                    </div>
+                                    <div class="features-row">
+                                        <ul>
+                                            <li>
+                                                <img src="/img/Bike Copy 5.png" alt="">
+                                                <p>113 Beds</p>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Bike Copy 6.png" alt="">
+                                                <p>Fast WiFi</p>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Bike Copy 7.png" alt="">
+                                                <p>Social Areas</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hostel">
+                                <div class="img-container">
+                                    <img src="/img/023X5034 Copy 12.png" alt="">
+                                </div>
+                                <div class="info-container">
+                                    <div class="info-wrap">
+                                        <p class="location">United Kingdom</p>
+                                        <div class="name-row">
+                                            <img src="/img/Barcelona Sea Copy 13.png" alt="">
+                                            <p>York
+                                                <br> &nbsp;
+                                            </p>
+                                        </div>
+                                        <div class="reviews-row">
+                                            <p>Reviews</p>
+                                            <div class="stars">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <p class="class">Excellent</p>
+                                            </div>
+                                        </div>
+                                        <a href="" class="button book-now-featured">Book Now</a>
+                                    </div>
+                                    <div class="features-row">
+                                        <ul>
+                                            <li>
+                                                <img src="/img/Bike Copy 5.png" alt="">
+                                                <p>113 Beds</p>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Bike Copy 6.png" alt="">
+                                                <p>Fast WiFi</p>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Bike Copy 7.png" alt="">
+                                                <p>Social Areas</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hostel">
+                                <div class="img-container">
+                                    <img src="/img/023X5034 Copy 12.png" alt="">
+                                </div>
+                                <div class="info-container">
+                                    <div class="info-wrap">
+                                        <p class="location">United Kingdom</p>
+                                        <div class="name-row">
+                                            <img src="/img/Barcelona Sea Copy 13.png" alt="">
+                                            <p>York
+                                                <br> &nbsp;
+                                            </p>
+                                        </div>
+                                        <div class="reviews-row">
+                                            <p>Reviews</p>
+                                            <div class="stars">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <p class="class">Excellent</p>
+                                            </div>
+                                        </div>
+                                        <a href="" class="button book-now-featured">Book Now</a>
+                                    </div>
+                                    <div class="features-row">
+                                        <ul>
+                                            <li>
+                                                <img src="/img/Bike Copy 5.png" alt="">
+                                                <p>113 Beds</p>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Bike Copy 6.png" alt="">
+                                                <p>Fast WiFi</p>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Bike Copy 7.png" alt="">
+                                                <p>Social Areas</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hostel">
+                                <div class="img-container">
+                                    <img src="/img/023X5034 Copy 12.png" alt="">
+                                </div>
+                                <div class="info-container">
+                                    <div class="info-wrap">
+                                        <p class="location">United Kingdom</p>
+                                        <div class="name-row">
+                                            <img src="/img/Barcelona Sea Copy 13.png" alt="">
+                                            <p>York
+                                                <br> &nbsp;
+                                            </p>
+                                        </div>
+                                        <div class="reviews-row">
+                                            <p>Reviews</p>
+                                            <div class="stars">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <p class="class">Excellent</p>
+                                            </div>
+                                        </div>
+                                        <a href="" class="button book-now-featured">Book Now</a>
+                                    </div>
+                                    <div class="features-row">
+                                        <ul>
+                                            <li>
+                                                <img src="/img/Bike Copy 5.png" alt="">
+                                                <p>113 Beds</p>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Bike Copy 6.png" alt="">
+                                                <p>Fast WiFi</p>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Bike Copy 7.png" alt="">
+                                                <p>Social Areas</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="location-row">
+                            <div class="location-title-block spain">
+                                <div class="location-title-inner">
+                                    <h2>Spain </h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                        labore et dolore magna.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hostel">
+                                <div class="img-container">
+                                    <img src="/img/023X5034 Copy 12.png" alt="">
+                                </div>
+                                <div class="info-container">
+                                    <div class="info-wrap">
+                                        <p class="location">United Kingdom</p>
+                                        <div class="name-row">
+                                            <img src="/img/Barcelona Sea Copy 13.png" alt="">
+                                            <p>York
+                                                <br> &nbsp;
+                                            </p>
+                                        </div>
+                                        <div class="reviews-row">
+                                            <p>Reviews</p>
+                                            <div class="stars">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <p class="class">Excellent</p>
+                                            </div>
+                                        </div>
+                                        <a href="" class="button book-now-featured">Book Now</a>
+                                    </div>
+                                    <div class="features-row">
+                                        <ul>
+                                            <li>
+                                                <img src="/img/Bike Copy 5.png" alt="">
+                                                <p>113 Beds</p>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Bike Copy 6.png" alt="">
+                                                <p>Fast WiFi</p>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Bike Copy 7.png" alt="">
+                                                <p>Social Areas</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hostel">
+                                <div class="img-container">
+                                    <img src="/img/023X5034 Copy 12.png" alt="">
+                                </div>
+                                <div class="info-container">
+                                    <div class="info-wrap">
+                                        <p class="location">United Kingdom</p>
+                                        <div class="name-row">
+                                            <img src="/img/Barcelona Sea Copy 13.png" alt="">
+                                            <p>York
+                                                <br> &nbsp;
+                                            </p>
+                                        </div>
+                                        <div class="reviews-row">
+                                            <p>Reviews</p>
+                                            <div class="stars">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <p class="class">Excellent</p>
+                                            </div>
+                                        </div>
+                                        <a href="" class="button book-now-featured">Book Now</a>
+                                    </div>
+                                    <div class="features-row">
+                                        <ul>
+                                            <li>
+                                                <img src="/img/Bike Copy 5.png" alt="">
+                                                <p>113 Beds</p>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Bike Copy 6.png" alt="">
+                                                <p>Fast WiFi</p>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Bike Copy 7.png" alt="">
+                                                <p>Social Areas</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hostel">
+                                <div class="img-container">
+                                    <img src="/img/023X5034 Copy 12.png" alt="">
+                                </div>
+                                <div class="info-container">
+                                    <div class="info-wrap">
+                                        <p class="location">United Kingdom</p>
+                                        <div class="name-row">
+                                            <img src="/img/Barcelona Sea Copy 13.png" alt="">
+                                            <p>York
+                                                <br> &nbsp;
+                                            </p>
+                                        </div>
+                                        <div class="reviews-row">
+                                            <p>Reviews</p>
+                                            <div class="stars">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <p class="class">Excellent</p>
+                                            </div>
+                                        </div>
+                                        <a href="" class="button book-now-featured">Book Now</a>
+                                    </div>
+                                    <div class="features-row">
+                                        <ul>
+                                            <li>
+                                                <img src="/img/Bike Copy 5.png" alt="">
+                                                <p>113 Beds</p>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Bike Copy 6.png" alt="">
+                                                <p>Fast WiFi</p>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Bike Copy 7.png" alt="">
+                                                <p>Social Areas</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hostel">
+                                <div class="img-container">
+                                    <img src="/img/023X5034 Copy 12.png" alt="">
+                                </div>
+                                <div class="info-container">
+                                    <div class="info-wrap">
+                                        <p class="location">United Kingdom</p>
+                                        <div class="name-row">
+                                            <img src="/img/Barcelona Sea Copy 13.png" alt="">
+                                            <p>York
+                                                <br> &nbsp;
+                                            </p>
+                                        </div>
+                                        <div class="reviews-row">
+                                            <p>Reviews</p>
+                                            <div class="stars">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <p class="class">Excellent</p>
+                                            </div>
+                                        </div>
+                                        <a href="" class="button book-now-featured">Book Now</a>
+                                    </div>
+                                    <div class="features-row">
+                                        <ul>
+                                            <li>
+                                                <img src="/img/Bike Copy 5.png" alt="">
+                                                <p>113 Beds</p>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Bike Copy 6.png" alt="">
+                                                <p>Fast WiFi</p>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Bike Copy 7.png" alt="">
+                                                <p>Social Areas</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+        
+        
+                        <div class="location-row">
+                            <div class="location-title-block portugal">
+                                <div class="location-title-inner">
+                                    <h2>Portugal</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                        labore et dolore magna.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hostel">
+                                <div class="img-container">
+                                    <img src="/img/023X5034 Copy 12.png" alt="">
+                                </div>
+                                <div class="info-container">
+                                    <div class="info-wrap">
+                                        <p class="location">United Kingdom</p>
+                                        <div class="name-row">
+                                            <img src="/img/Barcelona Sea Copy 13.png" alt="">
+                                            <p>York
+                                                <br> &nbsp;
+                                            </p>
+                                        </div>
+                                        <div class="reviews-row">
+                                            <p>Reviews</p>
+                                            <div class="stars">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <p class="class">Excellent</p>
+                                            </div>
+                                        </div>
+                                        <a href="" class="button book-now-featured">Book Now</a>
+                                    </div>
+                                    <div class="features-row">
+                                        <ul>
+                                            <li>
+                                                <img src="/img/Bike Copy 5.png" alt="">
+                                                <p>113 Beds</p>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Bike Copy 6.png" alt="">
+                                                <p>Fast WiFi</p>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Bike Copy 7.png" alt="">
+                                                <p>Social Areas</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="location-row">
+                            <div class="location-title-block czech">
+                                <div class="location-title-inner">
+                                    <h2>Czech Republic</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                        labore et dolore magna.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hostel">
+                                <div class="img-container">
+                                    <img src="/img/023X5034 Copy 12.png" alt="">
+                                </div>
+                                <div class="info-container">
+                                    <div class="info-wrap">
+                                        <p class="location">United Kingdom</p>
+                                        <div class="name-row">
+                                            <img src="/img/Barcelona Sea Copy 13.png" alt="">
+                                            <p>York
+                                                <br> &nbsp;
+                                            </p>
+                                        </div>
+                                        <div class="reviews-row">
+                                            <p>Reviews</p>
+                                            <div class="stars">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <img src="/img/star.png" alt="">
+                                                <p class="class">Excellent</p>
+                                            </div>
+                                        </div>
+                                        <a href="" class="button book-now-featured">Book Now</a>
+                                    </div>
+                                    <div class="features-row">
+                                        <ul>
+                                            <li>
+                                                <img src="/img/Bike Copy 5.png" alt="">
+                                                <p>113 Beds</p>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Bike Copy 6.png" alt="">
+                                                <p>Fast WiFi</p>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Bike Copy 7.png" alt="">
+                                                <p>Social Areas</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-menu">
+            <div class="top-segment">
+                <div class="container">
+                    <div class="icon-row">
+                        <img src="/img/SafeStay_logo_stack_Nobox_whiteout cmyk.png" alt="">
+
+                        <div class="links-segment">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Help Centre</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                            <img class="menu-close-toggle" src="/img/Group 30.png" alt="">
+                        </div>
+                    </div>
+                    <div class="location-selector">
+                        <div class="selector">
+                            <p>Showing: <select name="" id="loc">
+                                <option value="">Locations in spain</option>
+                            </select></p>
+                            <img src="/img/dropdown.png" alt="" class="loc-dropdown">
+                        </div>
+                    </div>
+                    <ul class="slider-row">
+                        <li class="active">Madrid</li>
+                        <li>Barcelona Sea</li>
+                        <li> Barcelona Pesseig De</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-segment">
+                <div class="bottom-item" style="background-image: url('/img/GettyImages-589092945 Copy 5.png')"> 
+                    <div class="title">
+                        <h2>The <br>Explorer</h2>
+                        <img src="/img/right-arrow-slide.png" alt="" class="arrow">
+                    </div>
+                </div>
+                <div class="bottom-item" style="background-image: url('/img/GettyImages-589092945 Copy 3.png')">
+                    <div class="title">
+                        <h2>Groups</h2>
+                        <img src="/img/right-arrow-slide.png" alt="" class="arrow">
+                    </div>
+                </div>
+                <div class="bottom-item" style="background-image: url('/img/GettyImages-589092945 Copy 4.png')">
+                    <div class="title">
+                        <h2>Offers</h2>
+                        <img src="/img/right-arrow-slide.png" alt="" class="arrow">
+                    </div>
+                </div>
+            </div>
+            <section class="booking-form booking-form-menu">
+                <div class="container">
+            
+                    <div class="booking-inner">
+            
+                        <div class="booking-toggles">
+                            <div class="booking-toggle toggle-active">
+                                <img src="/img/person-icon.png" alt=""> Individual
+                            </div>
+                            <div class="booking-toggle relocate-group-booking">
+                                <img src="/img/group-icon-grey.png" alt="">Group Booking
+                            </div>
+                        </div>
+            
+                        <div class="booking-headings">
+                            <p class="label">Book Now</p>
+                            <h4>Stay with SafeStay</h4>
+                        </div>
+                        <form action="/" class="booking-inputs">
+                            <div class="form-group location-group">
+                                <select name="location" id="location">
+                                    <option value="">Where would you like to go?</option>
+                                </select>
+                                <img class="form-icon" src="/img/world_icon.png" alt="">
+                                <img class="select-down" src="/img/select-down.png" alt="">
+                            </div>
+                            <div class="form-group checkin-group">
+                                <input type="text" name="check-in" id="check-in" placeholder="Check In">
+                                <img class="check-icon" src="/img/check-icon.png" alt="">
+                            </div>
+                            <div class="form-group checkout-group">
+                                <input type="text" name="check-out" id="check-out" placeholder="Check Out">
+                                <img class="check-icon" src="/img/check-icon.png" alt="">
+                            </div>
+                            <div class="form-group book-group">
+                                <button type="submit">Book Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+         <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.5.1/velocity.min.js"></script>
 
         <script src="/js/bundle.js"></script>
     </body>

@@ -77,3 +77,16 @@
         }
     }
 }
+
+.flatpickr-calendar {
+    font-family: $proxima-nova-alt;
+
+    .flatpickr-day.selected {
+        background-color: $accent-pink;
+        border: 1px solid $accent-pink;
+    }
+}
+
+.relocate-group-booking {
+    cursor: pointer !important;
+}

@@ -15,7 +15,7 @@ let gulp         = require('gulp'),
 let bundleConfig = {
     js: {
         src: './src/js/app.js',
-        outputDir: './src/js/',
+        outputDir: './src/js',
         outputFile: 'bundle.js'
     }
 }
@@ -72,5 +72,5 @@ gulp.task('reload', function() {
 gulp.task('watch', ['sync', 'bundle'], function() {
     gulp.watch('src/styles/**/*.scss', ['css']);
     gulp.watch('src/**/*.html').on('change', bs.reload);
-    gulp.watch('src/js/bundle.js').on('change', bs.reload);
+    gulp.watch('./src/js/bundle.js').on('change', bs.reload);
 })

@@ -10,6 +10,12 @@ body {
 }
 
 @font-face {
+    font-family: $d-din;
+    src: url('/fonts/d-din-webfont.woff');
+    font-weight: 400;
+}
+
+@font-face {
     font-family: $proxima-nova-alt;
     src: url('/fonts/Proxima Nova Alt Regular-webfont.ttf');
     font-weight: 400;
